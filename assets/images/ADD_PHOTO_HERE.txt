@@ -1,0 +1,21 @@
+ADD YOUR PHOTO HERE
+===================
+
+Save your profile photo as: profile.jpg
+
+Requirements:
+- Format: JPG or PNG
+- File name: profile.jpg (exactly, lowercase)
+- Recommended size: 400x400px minimum
+- Type: Professional photo, clean background
+
+The photo will display as a 160px circle on the page.
+
+If you don't have a photo ready:
+1. Use your LinkedIn photo
+2. Take a quick photo with neutral background
+3. Use a professional headshot if you have one
+
+To add your photo:
+1. Delete this ADD_PHOTO_HERE.txt file
+2. Add your profile.jpg in this folder (assets/images/)

@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+/* Reset & Base */
 * {
     margin: 0;
     padding: 0;
@@ -6,41 +6,42 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #fff;
+    color: #2c3e50;
+    background-color: #ffffff;
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 60px 20px;
+    padding: 60px 30px;
 }
 
-/* Hero Section with Photo and Name */
+/* Hero Section */
 .hero {
     display: flex;
     align-items: center;
     gap: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     padding-bottom: 40px;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 2px solid #e8e8e8;
 }
 
 .hero-photo img {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #f5f5f5;
+    border: 3px solid #f0f0f0;
 }
 
 .hero-content h1 {
-    font-size: 3em;
+    font-size: 2.8em;
     font-weight: 700;
     color: #1a1a1a;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
 }
 
 .social-links {
@@ -49,129 +50,214 @@ body {
 }
 
 .social-links a {
-    color: #555;
-    font-size: 1.8em;
-    transition: color 0.3s ease;
+    color: #666;
+    font-size: 1.6em;
+    transition: color 0.2s ease;
     text-decoration: none;
 }
 
 .social-links a:hover {
-    color: #0066cc;
+    color: #2563eb;
 }
 
-/* Description Section */
-.description {
+/* About Section */
+.about {
     margin-bottom: 60px;
 }
 
-.description p {
-    font-size: 1.15em;
-    color: #555;
-    margin-bottom: 15px;
+.about p {
+    font-size: 1.1em;
+    color: #4a5568;
+    margin-bottom: 14px;
     line-height: 1.7;
 }
 
-.description h2 {
-    font-size: 1.5em;
+.about p:first-child strong {
     color: #1a1a1a;
-    margin: 30px 0 15px 0;
+    font-size: 1.15em;
 }
 
-.description ul {
+.about h2 {
+    font-size: 1.4em;
+    color: #1a1a1a;
+    margin: 30px 0 16px 0;
+    font-weight: 600;
+}
+
+.about ul {
     list-style: none;
     padding-left: 0;
 }
 
-.description ul li {
-    padding: 8px 0;
-    padding-left: 25px;
+.about ul li {
+    padding: 6px 0 6px 22px;
     position: relative;
+    color: #4a5568;
 }
 
-.description ul li:before {
+.about ul li:before {
     content: "→";
     position: absolute;
     left: 0;
-    color: #0066cc;
+    color: #2563eb;
     font-weight: bold;
 }
 
-/* Two Column Grid */
-.two-columns {
+/* Services: Two Columns */
+.services {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    gap: 35px;
     margin-bottom: 60px;
 }
 
-.column {
-    padding: 30px;
-    background-color: #fafafa;
+.service-box {
+    background: #fafbfc;
+    border: 1px solid #e1e4e8;
     border-radius: 8px;
-    border: 1px solid #e8e8e8;
+    padding: 32px;
 }
 
-.column h2 {
-    font-size: 1.5em;
+.service-box h2 {
+    font-size: 1.6em;
     color: #1a1a1a;
-    margin-bottom: 20px;
-    padding-bottom: 15px;
-    border-bottom: 2px solid #0066cc;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #2563eb;
 }
 
-.column h3 {
-    font-size: 1.1em;
-    color: #333;
-    margin-top: 25px;
+.service-intro {
+    font-size: 1.05em;
+    color: #4a5568;
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.service-box h3 {
+    font-size: 1.15em;
+    color: #2c3e50;
+    margin-top: 24px;
     margin-bottom: 10px;
+    font-weight: 600;
 }
 
-.column p {
-    color: #666;
+.service-box p {
+    color: #4a5568;
     margin-bottom: 12px;
     line-height: 1.6;
 }
 
-.column ul {
+.service-box ul {
     list-style: none;
     padding-left: 0;
-    margin-top: 10px;
+    margin: 12px 0;
 }
 
-.column ul li {
-    padding: 6px 0;
-    color: #555;
+.service-box ul li {
+    padding: 5px 0 5px 18px;
+    position: relative;
+    color: #4a5568;
+}
+
+.service-box ul li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.partnership-label {
+    display: inline-block;
+    background: #eff6ff;
+    color: #1e40af;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.85em;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.availability {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e1e4e8;
     font-size: 0.95em;
 }
 
-.column a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-.column a:hover {
-    text-decoration: underline;
-}
-
-/* Highlighted items */
-.column strong {
+.availability strong {
     color: #1a1a1a;
+}
+
+/* Credentials Section */
+.credentials {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+.credentials h2 {
+    font-size: 1.5em;
+    color: #1a1a1a;
+    margin-bottom: 25px;
+    text-align: center;
     font-weight: 600;
+}
+
+.credentials-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.credential-item h3 {
+    font-size: 1.1em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.credential-item p {
+    color: #4a5568;
+    line-height: 1.7;
+}
+
+.credential-item a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.credential-item a:hover {
+    text-decoration: underline;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 30px 0;
-    border-top: 1px solid #e0e0e0;
-    color: #777;
+    border-top: 1px solid #e8e8e8;
+    color: #6b7280;
 }
 
 footer p {
     margin: 0;
 }
 
-/* Responsive Design */
+/* Responsive */
+@media (max-width: 900px) {
+    .services {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .credentials-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
@@ -184,34 +270,31 @@ footer p {
     }
 
     .hero-photo img {
-        width: 150px;
-        height: 150px;
+        width: 140px;
+        height: 140px;
     }
 
-    .two-columns {
-        grid-template-columns: 1fr;
-        gap: 30px;
+    .container {
+        padding: 40px 20px;
     }
 
-    .description {
-        text-align: left;
+    .service-box,
+    .credentials {
+        padding: 24px;
     }
 }
 
 @media (max-width: 480px) {
-    .container {
-        padding: 40px 15px;
-    }
-
     .hero-content h1 {
-        font-size: 1.8em;
+        font-size: 1.9em;
     }
 
     .social-links a {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 
-    .column {
-        padding: 20px;
+    .about p,
+    .service-intro {
+        font-size: 1em;
     }
 }

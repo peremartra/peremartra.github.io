@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} | {{ site.title }}</title>
     <meta name="description" content="{{ site.description }}">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-    <!-- Font Awesome for social icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <main class="container">
-        <!-- Hero Section with Photo and Name -->
+        <!-- Hero -->
         <section class="hero">
             <div class="hero-photo">
-                <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Pere Martra">
+                <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="{{ site.author.name }}">
             </div>
             <div class="hero-content">
                 <h1>{{ site.author.name }}</h1>
@@ -30,7 +29,7 @@
                     </a>
                     {% endif %}
                     {% if site.twitter_username %}
-                    <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" aria-label="Twitter">
+                    <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" aria-label="X">
                         <i class="fab fa-x-twitter"></i>
                     </a>
                     {% endif %}
@@ -38,20 +37,62 @@
             </div>
         </section>
 
-        <!-- Description -->
-        <section class="description">
+        <!-- About -->
+        <section class="about">
             {{ content }}
         </section>
 
-        <!-- Two Column Layout: Formation | Consulting -->
-        <section class="two-columns">
-            <div class="column formation">
-                <h2>Formación & Investigación</h2>
-                {{ page.formation }}
+        <!-- Services: Training & Consulting -->
+        <section class="services">
+            <!-- Training -->
+            <div class="service-box">
+                <h2>Training</h2>
+                <p class="service-intro">Hands-on workshops for engineering teams on LLM optimization and creation.</p>
+                
+                <h3>What I Offer</h3>
+                <ul>
+                    <li>LLM optimization techniques (pruning, quantization, distillation)</li>
+                    <li>Fairness-aware model development</li>
+                    <li>Production deployment strategies</li>
+                </ul>
+
+                <h3>Format</h3>
+                <p>Short workshops • Small teams • Customized content</p>
+
+                <p class="availability"><strong>Limited availability:</strong> 1-2 engagements maximum</p>
             </div>
-            <div class="column consulting">
-                <h2>Consultoría</h2>
-                {{ page.consulting }}
+
+            <!-- Consulting -->
+            <div class="service-box">
+                <h2>Consulting</h2>
+                <p class="service-intro">Specialized consulting services for production LLM challenges.</p>
+                
+                <h3>LLM Optimization</h3>
+                <p>Hands-on optimization for production deployments. Structured pruning, quantization, and efficiency improvements.</p>
+
+                <h3>Agent Migration</h3>
+                <p class="partnership-label">Research Partnership</p>
+                <p>Collaborative framework development for migrating agentic systems from proprietary models (GPT-4, Claude) to open-source alternatives (Llama, Mistral).</p>
+
+                <p class="availability"><strong>Limited availability:</strong> 1-2 engagements maximum</p>
+            </div>
+        </section>
+
+        <!-- Credentials -->
+        <section class="credentials">
+            <h2>Selected Work</h2>
+            <div class="credentials-grid">
+                <div class="credential-item">
+                    <h3>Books</h3>
+                    <p><strong>Rearchitecting LLMs</strong> (Manning, forthcoming)<br>
+                    <strong>Large Language Models Projects</strong> (Apress, 2024)</p>
+                </div>
+                <div class="credential-item">
+                    <h3>Open Source</h3>
+                    <p><a href="https://github.com/peremartra/optipfair" target="_blank">OptiPfair</a> – Fairness-aware structured pruning<br>
+                    <a href="https://github.com/peremartra/wizardsdata" target="_blank">WizardSData</a> – Data curation for LLMs<br>
+                    1,700+ GitHub stars combined</p>
+                </div>
             </div>
         </section>
 

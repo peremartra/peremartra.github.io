@@ -1,0 +1,113 @@
+QUICK START - 3 STEPS
+=====================
+
+STEP 1: ADD PHOTO (2 mins)
+---------------------------
+→ Save your photo as: assets/images/profile.jpg
+→ Delete the ADD_PHOTO_HERE.txt file
+
+STEP 2: UPDATE INFO (2 mins)
+-----------------------------
+→ Edit _config.yml:
+   - Change email
+   - Change linkedin_username
+   - Change twitter_username (or remove if you don't have)
+
+STEP 3: UPLOAD TO GITHUB (1 min)
+---------------------------------
+→ Create repo: peremartra.github.io
+→ Drag all files to the repo
+→ Settings → Pages → Enable (branch: main)
+→ Wait 2 minutes
+→ Visit: https://peremartra.github.io
+
+DONE! ✅
+
+---
+
+EDITING CONTENT LATER
+----------------------
+
+About section:
+→ Edit: index.md
+
+Training & Consulting:
+→ Edit: _layouts/home.html (lines 49-86)
+
+Credentials (books/repos):
+→ Edit: _layouts/home.html (lines 88-102)
+
+Colors/styling:
+→ Edit: assets/css/style.css
+
+---
+
+SITE STRUCTURE
+--------------
+
+┌─────────────────────────┐
+│ [PHOTO] PERE MARTRA     │
+│         Links           │
+├─────────────────────────┤
+│ About & Current Work    │
+├────────────┬────────────┤
+│ TRAINING   │ CONSULTING │
+├────────────┴────────────┤
+│ Selected Work           │
+├─────────────────────────┤
+│ Contact                 │
+└─────────────────────────┘
+
+---
+
+WHAT'S DIFFERENT FROM V2
+------------------------
+
+V2: Had content in YAML front matter
+V3: Content directly in HTML (easier to edit)
+
+V2: Generic structure
+V3: Specific Training/Consulting split
+
+V2: In Spanish
+V3: In English
+
+V2: Longer content
+V3: Minimal, concise content
+
+---
+
+FILES YOU'LL EDIT
+-----------------
+
+Most common:
+1. _config.yml (your info)
+2. index.md (about section)
+3. _layouts/home.html (services)
+
+Rarely:
+4. assets/css/style.css (styling)
+
+Never:
+- Gemfile
+- .gitignore
+
+---
+
+TROUBLESHOOTING
+---------------
+
+Photo not showing?
+→ Check: assets/images/profile.jpg exists
+
+Services not updating?
+→ Edit _layouts/home.html (not index.md!)
+
+Site not deploying?
+→ Wait 2-3 minutes
+→ Check Settings → Pages is enabled
+
+---
+
+Need help?
+→ Read README.md for full docs

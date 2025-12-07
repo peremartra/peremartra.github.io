@@ -1,28 +1,27 @@
-# Site settings
+# Site Settings
 title: Pere Martra
 description: >-
-  AI Engineer especializado en optimización de LLMs, structured pruning 
-  y sistemas fairness-aware.
+  AI Engineer & Applied Researcher specializing in LLM optimization, 
+  structured pruning, and fairness-aware systems.
 
 baseurl: ""
 url: "https://peremartra.github.io"
 
-# Author info
+# Author
 author:
   name: Pere Martra
-  email: tu-email@example.com
+  email: your-email@example.com
 
-# Social usernames (sin @ ni URLs completas)
+# Social Links (username only, no @ or full URLs)
 github_username: peremartra
-linkedin_username: tu-linkedin-username
-twitter_username: tu-twitter-username  # opcional
+linkedin_username: your-linkedin-username
+twitter_username: your-twitter-username  # optional
 
-# Build settings
+# Build Settings
 markdown: kramdown
 
-# Exclude from processing
+# Exclude
 exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
-  - instructions.txt
