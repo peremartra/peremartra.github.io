@@ -103,19 +103,20 @@ body {
     font-weight: bold;
 }
 
-/* Services: Two Columns */
+/* Services: Two Columns - CORREGIDO */
 .services {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 35px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
     margin-bottom: 60px;
 }
 
 .service-box {
     background: #fafbfc;
-    border: 1px solid #e1e4e8;
+    border: 2px solid #e1e4e8;
     border-radius: 8px;
     padding: 32px;
+    min-height: 400px;
 }
 
 .service-box h2 {
@@ -250,6 +251,10 @@ footer p {
     .services {
         grid-template-columns: 1fr;
         gap: 25px;
+    }
+    
+    .service-box {
+        min-height: auto;
     }
     
     .credentials-grid {
