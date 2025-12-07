@@ -2,33 +2,38 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: <a href='#'>AI Engineer & Researcher</a>. Author of "Large Language Models Projects" (Apress) & "Rearchitecting LLMs" (Manning).
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  image_circular: false # set to true for circular profile picture
+  address: >
+    <p>Barcelona, Spain</p>
 
+news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am an **Applied AI Researcher** and **AI Engineer** specialized in Large Language Models (LLMs), currently focused on **Surgical Optimization**, **Structured Pruning**, and **Fairness**.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+[cite_start]I am the author of **"Large Language Models Projects"** (Apress, 2024) [cite: 1] and am currently writing **"Rearchitecting LLMs"** for Manning Publications (expected 2026). My work bridges the gap between fundamental research and production-grade AI, creating tools like **OptiPFair** and **WizardSData**.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Previously, I served as an AI Architect at CaixaBankTech. Now, I dedicate my time to independent research and open-source development in the LLM efficiency space.
+
+### 🛑 Consulting & Advisory
+
+I offer very limited consulting slots (1-2 hours/week) for teams and companies needing high-level guidance on:
+
+* **LLM Efficiency:** Reducing inference costs and latency via Pruning and Quantization.
+* **Migrate Agents to Open Source:** Strategies to move Agentic Systems from proprietary APIs (GPT-4/Claude) to efficient, cost-effective Open Source architectures.
+* **Fairness Implementation:** Detecting and mitigating bias in production models.
+
+<a href="TU_ENLACE_DE_CAL_COM_O_TOPMATE" class="btn btn-outline-primary">Book a Strategy Session (300€/h)</a>
+
+---
+
+### Current Research Focus
+
+[cite_start]My current research targets the **GLU Expansion Ratios** in Llama-3.2 models, demonstrating how specific pruning ratios (140%) can maintain performance while significantly reducing carbon footprint[cite: 205].
