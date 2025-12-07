@@ -1,0 +1,64 @@
+/* Custom styles for peremartra.github.io
+   
+   This file is OPTIONAL. The site works fine without it.
+   To activate custom styles, uncomment the line in _config.yml
+   
+   The default minima theme already looks good, but you can
+   override specific elements here if you want.
+*/
+
+/* Example: Adjust heading sizes */
+/*
+h1 {
+  font-size: 2.5em;
+  color: #2c3e50;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #34495e;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.3em;
+}
+*/
+
+/* Example: Custom link colors */
+/*
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+*/
+
+/* Example: Adjust content width */
+/*
+.wrapper {
+  max-width: 900px;
+}
+*/
+
+/* Example: Add subtle background to code blocks */
+/*
+pre, code {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+}
+*/
+
+/* Example: Style the hero section differently */
+/*
+.page-content h1:first-child {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+}
+
+.page-content h1:first-child + p strong {
+  font-size: 1.2em;
+  color: #555;
+}
+*/

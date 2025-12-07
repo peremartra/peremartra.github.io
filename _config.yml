@@ -1,0 +1,36 @@
+# Site settings
+title: Pere Martra
+email: your-email@example.com
+description: >-
+  AI Engineer specializing in LLM optimization, structured pruning, 
+  and fairness-aware systems. Author of "Large Language Models Projects" (Apress)
+  and "Rearchitecting LLMs" (Manning, forthcoming).
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://peremartra.github.io" # your site URL
+
+# Author info
+author:
+  name: Pere Martra
+  email: your-email@example.com
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Navigation
+header_pages:
+  - research.md
+  - training.md
+  - contact.md
+
+# Social links (optional - uncomment and add yours)
+# github_username: peremartra
+# linkedin_username: yourlinkedin
+# twitter_username: yourtwitter
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
