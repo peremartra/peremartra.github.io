@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <main class="container">
+        <!-- Hero Section with Photo and Name -->
+        <section class="hero">
+            <div class="hero-photo">
+                <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Pere Martra">
+            </div>
+            <div class="hero-content">
+                <h1>{{ site.author.name }}</h1>
+                <div class="social-links">
+                    {% if site.github_username %}
+                    <a href="https://github.com/{{ site.github_username }}" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    {% endif %}
+                    {% if site.linkedin_username %}
+                    <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    {% endif %}
+                    {% if site.twitter_username %}
+                    <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+        </section>
+
+        <!-- Description -->
+        <section class="description">
+            {{ content }}
+        </section>
+
+        <!-- Two Column Layout: Formation | Consulting -->
+        <section class="two-columns">
+            <div class="column formation">
+                <h2>Formación & Investigación</h2>
+                {{ page.formation }}
+            </div>
+            <div class="column consulting">
+                <h2>Consultoría</h2>
+                {{ page.consulting }}
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>{{ site.author.email }}</p>
+        </footer>
+    </main>
+</body>
+</html>

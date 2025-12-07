@@ -1,0 +1,21 @@
+INSTRUCCIONES PARA LA FOTO
+===========================
+
+Coloca tu foto de perfil aquí con el nombre: profile.jpg
+
+Requisitos:
+- Formato: JPG o PNG
+- Nombre del archivo: profile.jpg (exactamente así, minúsculas)
+- Tamaño recomendado: 400x400px mínimo
+- Tipo: Foto profesional, fondo limpio preferiblemente
+
+La foto se mostrará como un círculo de 180px de diámetro en la página.
+
+Si no tienes foto lista, puedes:
+1. Usar una foto de LinkedIn (descárgala y renómbrala)
+2. Hacer una foto rápida con fondo neutro
+3. Temporalmente usar un avatar/placeholder hasta tener una mejor
+
+Para reemplazar este archivo:
+1. Elimina este FOTO_AQUI.txt
+2. Añade tu profile.jpg en esta misma carpeta

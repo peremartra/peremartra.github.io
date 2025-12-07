@@ -1,139 +1,132 @@
-# Pere Martra - Personal Site
+# Pere Martra - Personal Site V2
 
-Minimal Jekyll site for GitHub Pages. No problematic plugins, works out of the box.
+Landing page limpio con foto, links sociales, y layout de 2 columnas (Formación | Consultoría).
 
-## Quick Setup
+## Setup Rápido
 
-### 1. Create GitHub Repository
+### 1. Añadir tu foto
+Coloca tu foto de perfil en: `assets/images/profile.jpg`
+- Formato: JPG o PNG
+- Tamaño recomendado: 400x400px mínimo (se mostrará como círculo de 180px)
 
-1. Go to GitHub and create a new repository named `peremartra.github.io`
-2. Make it public
-3. Don't initialize with README (we have this one)
+### 2. Editar información personal
+Edita `_config.yml`:
+```yaml
+author:
+  email: tu-email-real@example.com
 
-### 2. Upload Files
+github_username: peremartra
+linkedin_username: tu-username-linkedin
+twitter_username: tu-username-twitter  # opcional
+```
 
-**Option A: Via GitHub Web Interface**
-1. Go to your new repository
-2. Click "uploading an existing file"
-3. Drag and drop ALL files from this folder
-4. Commit with message: "Initial site setup"
+### 3. Subir a GitHub
 
-**Option B: Via Git Command Line**
+**Opción A - Via Web:**
+1. Crea repo `peremartra.github.io`
+2. Arrastra TODOS los archivos
+3. Commit
+
+**Opción B - Via Terminal:**
 ```bash
-cd /path/to/this/folder
+cd peremartra-site-v2
 git init
 git add .
-git commit -m "Initial site setup"
+git commit -m "Initial site"
 git branch -M main
 git remote add origin https://github.com/peremartra/peremartra.github.io.git
 git push -u origin main
 ```
 
-### 3. Enable GitHub Pages
+### 4. Activar GitHub Pages
+Settings → Pages → Source: main → / (root) → Save
 
-1. Go to your repository settings
-2. Navigate to "Pages" in the left sidebar
-3. Under "Source", select "Deploy from a branch"
-4. Select branch: `main` and folder: `/ (root)`
-5. Click "Save"
+Espera 2 minutos → https://peremartra.github.io
 
-### 4. Wait for Deployment
+## Estructura del Contenido
 
-GitHub will build your site automatically. This takes 1-2 minutes.
+Todo el contenido está en `index.md`:
+- Descripción principal (después del `---`)
+- `formation:` → Columna izquierda (libros, master, repos)
+- `consulting:` → Columna derecha (training, research partnership)
 
-Your site will be live at: `https://peremartra.github.io`
+## Personalización
 
-## Customization
+### Cambiar contenido
+Edita `index.md` - usa Markdown normal:
+- `**texto**` = negrita
+- `[texto](url)` = link
+- `### Título` = subtítulo
 
-### Essential Edits (Before Publishing)
+### Cambiar colores
+Edita `assets/css/style.css`:
+- `#0066cc` = color de links y acentos (línea ~76, ~105, etc)
+- `#1a1a1a` = color de títulos
+- `#fafafa` = fondo de columnas
 
-Edit `_config.yml`:
-```yaml
-email: your-actual-email@example.com
-# Uncomment and add your social links:
-github_username: peremartra
-linkedin_username: your-linkedin
-```
+### Cambiar tamaños
+En `style.css`:
+- `.hero-photo img` → tamaño de foto (línea ~38)
+- `.hero-content h1` → tamaño nombre (línea ~44)
+- `.two-columns` → gap entre columnas (línea ~103)
 
-Edit `contact.md`:
-- Replace "your-email@example.com" with your actual email
-- Update GitHub and LinkedIn links
-
-### Content Updates
-
-All content is in Markdown files. Edit directly on GitHub or locally:
-
-- `index.md` - Home page / Hero section
-- `research.md` - Publications and projects
-- `training.md` - Training programs
-- `contact.md` - Contact information
-
-### Local Development (Optional)
-
-If you want to preview changes locally before pushing:
+## Preview Local (Opcional)
 
 ```bash
-# Install dependencies (first time only)
 bundle install
-
-# Run local server
 bundle exec jekyll serve
-
-# View at http://localhost:4000
+# http://localhost:4000
 ```
 
-## Adding Your Custom Domain (Later)
+## Lo que hace este diseño:
 
-1. In repository settings → Pages → Custom domain
-2. Enter: `peremartra.com`
-3. Check "Enforce HTTPS" (after DNS propagates)
-4. Update your domain's DNS:
-   - Add CNAME record: `www` → `peremartra.github.io`
-   - Add A records for apex domain (see [GitHub docs](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site))
+✅ Hero grande con foto circular  
+✅ Nombre prominente con links sociales al lado  
+✅ Descripción + current work limpios  
+✅ 2 columnas para Formación vs Consultoría  
+✅ Responsive (mobile-friendly)  
+✅ Zero JavaScript (solo HTML/CSS)  
+✅ Font Awesome para iconos sociales  
+
+## Diferencias vs V1:
+
+- ❌ Sin páginas separadas (research, training, contact)
+- ❌ Sin menú de navegación
+- ✅ TODO en una página
+- ✅ Menos contenido, más impacto visual
+- ✅ Layout de 2 columnas
+- ✅ Foto prominente
+
+## Custom Domain (Después)
+
+Settings → Pages → Custom domain → `peremartra.com`
 
 ## Troubleshooting
 
-**Site not appearing after 5 minutes?**
-- Check GitHub Actions tab in your repo for build errors
-- Ensure repository is public
-- Verify GitHub Pages is enabled in settings
+**Foto no aparece:**
+- Verifica que el archivo esté en `assets/images/profile.jpg`
+- Nombres de archivo case-sensitive en Linux
 
-**Build failing?**
-- This setup uses only GitHub Pages compatible gems
-- Should work without any configuration changes
-- Check the Actions tab for specific error messages
+**Iconos sociales no aparecen:**
+- Font Awesome se carga desde CDN (requiere internet)
+- Si falla, verifica que el link CDN esté actualizado
 
-**Need to make quick fixes?**
-- Edit files directly on GitHub
-- Changes deploy automatically within 1-2 minutes
+**Columnas se ven raras:**
+- En móvil, las columnas se apilan (es normal)
+- En desktop, deben estar lado a lado
 
-## Structure
+## Próximos Pasos
 
-```
-.
-├── _config.yml          # Site configuration
-├── index.md             # Home page
-├── research.md          # Research & publications
-├── training.md          # Training programs
-├── contact.md           # Contact page
-├── Gemfile              # Ruby dependencies
-└── README.md            # This file
-```
-
-## Next Steps
-
-1. [ ] Replace placeholder email addresses
-2. [ ] Add your actual GitHub/LinkedIn/Twitter links
-3. [ ] Update contact page with preferred contact method
-4. [ ] Optional: Add a profile photo
-5. [ ] Optional: Customize colors/styling
-6. [ ] Test all links after deployment
-
-## Support
-
-Jekyll documentation: https://jekyllrb.com/docs/  
-GitHub Pages docs: https://docs.github.com/en/pages
+1. [ ] Añade tu foto
+2. [ ] Edita _config.yml con tus datos
+3. [ ] Revisa contenido en index.md
+4. [ ] Sube a GitHub
+5. [ ] Testea en móvil
 
 ---
 
-**Note**: This is a minimal setup using only GitHub Pages native features. No external plugins = no deployment headaches.
+**Este diseño prioriza:**
+- Impacto visual inmediato (foto + nombre)
+- Menos texto, más estructura
+- Facilidad de edición (todo en 1 archivo)
+- Zero mantenimiento
