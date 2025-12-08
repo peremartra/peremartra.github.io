@@ -11,5 +11,5 @@ I help ML engineering teams optimize large language models for production throug
 
 - Writing *Rearchitecting LLMs* for Manning Publications
 - Developing frameworks for agent migration to open-source models
-- Active contributor to Hugging Face and Google Gemini Cookbooks
-- Creator of OptiPfair and WizardSData (1,700+ GitHub stars)
+- Active Open Source contributor (1,700+ GitHub stars)
+- Developing OptipFair, a fairness-aware pruning library for LLMs. 
