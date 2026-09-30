@@ -1,0 +1,9 @@
+title: Pere Martra
+description: >-
+  I research how to make language models smaller, faster and fairer by
+  intervening on their structure: pruning, distillation and activation analysis.
+url: https://peremartra.github.io
+lang: en
+exclude:
+  - README.md
+  - .gitignore

@@ -1,115 +1,89 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
-  <title>Pere Martra — ML Research Engineer</title>
-  <meta name="description" content="I research how to make language models smaller, faster and fairer by intervening on their structure: pruning, distillation and activation analysis.">
-  <link rel="canonical" href="https://peremartra.github.io/">
+---
+layout: default
+title: Pere Martra — ML Research Engineer
+---
+<header class="intro">
+  <img class="photo" src="{{ '/assets/images/profile.jpg' | relative_url }}" width="512" height="512" alt="Portrait of Pere Martra">
+  <div>
+    <h1>Pere Martra</h1>
+    <p class="role">ML Research Engineer — LLM optimization &amp; structural pruning</p>
+    <p class="meta">Author of "Rearchitecting LLMs" (Manning) · Barcelona</p>
+  </div>
+</header>
 
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Pere Martra — ML Research Engineer">
-  <meta property="og:description" content="I research how to make language models smaller, faster and fairer by intervening on their structure: pruning, distillation and activation analysis.">
-  <meta property="og:url" content="https://peremartra.github.io/">
-  <meta property="og:image" content="https://peremartra.github.io/assets/images/profile.jpg">
-  <meta property="og:image:alt" content="Portrait of Pere Martra">
+<p class="lead">I research how to make language models smaller, faster and fairer by intervening on their structure: pruning, distillation and activation analysis.</p>
 
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-  <header class="intro">
-    <img class="photo" src="assets/images/profile.jpg" width="512" height="512" alt="Portrait of Pere Martra">
-    <div>
-      <h1>Pere Martra</h1>
-      <p class="role">ML Research Engineer — LLM optimization &amp; structural pruning</p>
-      <p class="meta">Author of "Rearchitecting LLMs" (Manning) · Barcelona</p>
-    </div>
-  </header>
+<section aria-labelledby="research">
+  <h2 id="research">Research</h2>
+  <ul class="entries">
+    <li>
+      <a class="title" href="https://arxiv.org/abs/2607.28319">Fairness Pruning: Locating Demographic Bias in GLU-MLP Layers via Differential Activations</a>
+      <p class="meta">arXiv:2607.28319 · Jul 2026 · with Eugenio Martínez Cámara and Alfonso Ureña López (Universidad de Jaén)</p>
+      <p>Identifies neuron circuits for demographic bias that are dissociable from general capabilities, retaining 99.49% of capability under targeted intervention.</p>
+    </li>
+    <li>
+      <a class="title" href="https://arxiv.org/abs/2512.22671">Fragile Knowledge, Robust Instruction-Following: The Width Pruning Dichotomy in Llama-3.2</a>
+      <p class="meta">arXiv:2512.22671 · Dec 2025</p>
+    </li>
+    <li>
+      <a class="title" href="https://osf.io/preprints/osf/qgxea">Exploring GLU Expansion Ratios: Structured Pruning in Llama-3.2 Models</a>
+      <p class="meta">OSF preprint · Dec 2024</p>
+    </li>
+  </ul>
+  <h3>Talks</h3>
+  <p>Invited speaker, STAC Summit London (Apr 2025) · Speaker, Dev.BG Conference (May 2026)</p>
+</section>
 
-  <main>
-    <p class="lead">I research how to make language models smaller, faster and fairer by intervening on their structure: pruning, distillation and activation analysis.</p>
+<section aria-labelledby="books">
+  <h2 id="books">Books</h2>
+  <ul class="entries">
+    <li>
+      <a class="title" href="{{ '/books/rearchitecting-llms/' | relative_url }}">Rearchitecting LLMs: Structural techniques for efficient models</a>
+      <p class="meta">Manning, MEAP since Jan 2026 · <a rel="sponsored noopener" href="https://hubs.la/Q040tvsK0">Manning</a> (affiliate link) · <a href="https://github.com/peremartra/Rearchitecting-LLMs">Companion code</a></p>
+    </li>
+    <li>
+      <a class="title" href="https://link.springer.com/book/10.1007/979-8-8688-0515-8">Large Language Models Projects</a>
+      <p class="meta">Apress, Oct 2024</p>
+      <p>Used as a textbook at PES University, the University of Texas at Dallas (Jindal School of Management) and West Ukrainian National University.</p>
+    </li>
+  </ul>
+</section>
 
-    <section aria-labelledby="research">
-      <h2 id="research">Research</h2>
-      <ul class="entries">
-        <li>
-          <a class="title" href="https://arxiv.org/abs/2607.28319">Fairness Pruning: Locating Demographic Bias in GLU-MLP Layers via Differential Activations</a>
-          <p class="meta">arXiv:2607.28319 · Jul 2026 · with Eugenio Martínez Cámara and Alfonso Ureña López (Universidad de Jaén)</p>
-          <p>Identifies neuron circuits for demographic bias that are dissociable from general capabilities, retaining 99.49% of capability under targeted intervention.</p>
-        </li>
-        <li>
-          <a class="title" href="https://arxiv.org/abs/2512.22671">Fragile Knowledge, Robust Instruction-Following: The Width Pruning Dichotomy in Llama-3.2</a>
-          <p class="meta">arXiv:2512.22671 · Dec 2025</p>
-        </li>
-        <li>
-          <a class="title" href="https://osf.io/preprints/osf/qgxea">Exploring GLU Expansion Ratios: Structured Pruning in Llama-3.2 Models</a>
-          <p class="meta">OSF preprint · Dec 2024</p>
-        </li>
-      </ul>
-      <h3>Talks</h3>
-      <p>Invited speaker, STAC Summit London (Apr 2025) · Speaker, Dev.BG Conference (May 2026)</p>
-    </section>
+<section aria-labelledby="open-source">
+  <h2 id="open-source">Open source</h2>
+  <ul class="entries">
+    <li>
+      <a class="title" href="https://github.com/peremartra/optipfair">OptiPfair</a>
+      <p>Structured pruning, knowledge distillation and bias visualization for LLMs.</p>
+    </li>
+    <li>
+      <a class="title" href="https://github.com/peremartra/Large-Language-Model-Notebooks-Course">Large Language Model Notebooks Course</a>
+      <p>Hands-on course on fine-tuning, DPO, pruning, RAG and evaluation. 1,800+ GitHub stars.</p>
+    </li>
+    <li>
+      <a class="title" href="https://github.com/peremartra/WizardSData">WizardSData</a>
+      <p>Synthetic conversation datasets and bias analysis.</p>
+    </li>
+  </ul>
+</section>
 
-    <section aria-labelledby="books">
-      <h2 id="books">Books</h2>
-      <ul class="entries">
-        <li>
-          <a class="title" href="https://hubs.la/Q040tvsK0">Rearchitecting LLMs: Structural Techniques for Efficient Models</a>
-          <p class="meta">Manning, MEAP since Jan 2026 · <a href="https://github.com/peremartra/Rearchitecting-LLMs">Companion code</a></p>
-        </li>
-        <li>
-          <a class="title" href="https://link.springer.com/book/10.1007/979-8-8688-0515-8">Large Language Models Projects</a>
-          <p class="meta">Apress, Oct 2024</p>
-          <p>Used as a textbook at PES University, the University of Texas at Dallas (Jindal School of Management) and West Ukrainian National University.</p>
-        </li>
-      </ul>
-    </section>
+<section aria-labelledby="demos">
+  <h2 id="demos">Demos &amp; models <span class="aside">(Hugging Face)</span></h2>
+  <ul class="entries compact">
+    <li><a href="https://huggingface.co/spaces/oopere/optipfair-bias-analyzer">OptiPFair Bias Analyzer</a> <span class="meta">(Space)</span></li>
+    <li>Fairness-pruning prompt pairs <span class="meta">(datasets)</span>: <a href="https://huggingface.co/datasets/oopere/fairness-pruning-pairs-en">fairness-pruning-pairs-en</a> · <a href="https://huggingface.co/datasets/oopere/fairness-pruning-pairs-es">fairness-pruning-pairs-es</a></li>
+    <li><a href="https://huggingface.co/collections/oopere/rearchitecting-llms">Companion models for Rearchitecting LLMs</a> <span class="meta">(collection)</span></li>
+    <li><a href="https://huggingface.co/oopere/activity/articles">Articles</a></li>
+  </ul>
+</section>
 
-    <section aria-labelledby="open-source">
-      <h2 id="open-source">Open source</h2>
-      <ul class="entries">
-        <li>
-          <a class="title" href="https://github.com/peremartra/optipfair">OptiPfair</a>
-          <p>Structured pruning, knowledge distillation and bias visualization for LLMs.</p>
-        </li>
-        <li>
-          <a class="title" href="https://github.com/peremartra/Large-Language-Model-Notebooks-Course">Large Language Model Notebooks Course</a>
-          <p>Hands-on course on fine-tuning, DPO, pruning, RAG and evaluation. 1,800+ GitHub stars.</p>
-        </li>
-        <li>
-          <a class="title" href="https://github.com/peremartra/WizardSData">WizardSData</a>
-          <p>Synthetic conversation datasets and bias analysis.</p>
-        </li>
-      </ul>
-    </section>
+<section aria-labelledby="writing">
+  <h2 id="writing">Writing</h2>
+  <p><a href="https://medium.com/@peremartra">Medium</a></p>
+</section>
 
-    <section aria-labelledby="demos">
-      <h2 id="demos">Demos &amp; models <span class="aside">(Hugging Face)</span></h2>
-      <ul class="entries compact">
-        <li><a href="https://huggingface.co/spaces/oopere/optipfair-bias-analyzer">OptiPFair Bias Analyzer</a> <span class="meta">(Space)</span></li>
-        <li>Fairness-pruning prompt pairs <span class="meta">(datasets)</span>: <a href="https://huggingface.co/datasets/oopere/fairness-pruning-pairs-en">fairness-pruning-pairs-en</a> · <a href="https://huggingface.co/datasets/oopere/fairness-pruning-pairs-es">fairness-pruning-pairs-es</a></li>
-        <li><a href="https://huggingface.co/collections/oopere/rearchitecting-llms">Companion models for Rearchitecting LLMs</a> <span class="meta">(collection)</span></li>
-        <li><a href="https://huggingface.co/oopere/activity/articles">Articles</a></li>
-      </ul>
-    </section>
-
-    <section aria-labelledby="writing">
-      <h2 id="writing">Writing</h2>
-      <p><a href="https://medium.com/@peremartra">Medium</a></p>
-    </section>
-
-    <section aria-labelledby="contact">
-      <h2 id="contact">Contact</h2>
-      <p>Open to research collaborations.</p>
-      <ul class="links">
-        <li>Email: <a href="mailto:peremartra@uadla.com">peremartra@uadla.com</a></li>
-        <li><a href="https://www.linkedin.com/in/pere-martra/">LinkedIn</a></li>
-        <li><a href="https://github.com/peremartra">GitHub</a></li>
-        <li><a href="https://huggingface.co/oopere">Hugging Face</a></li>
-        <li><a href="https://orcid.org/0009-0003-1058-5815">ORCID</a></li>
-      </ul>
-    </section>
-  </main>
-</body>
-</html>
+<section aria-labelledby="contact">
+  <h2 id="contact">Contact</h2>
+  <p>Open to research collaborations.</p>
+  <p>Email: <a href="mailto:peremartra@uadla.com">peremartra@uadla.com</a></p>
+</section>

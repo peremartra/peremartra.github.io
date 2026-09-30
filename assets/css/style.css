@@ -30,7 +30,7 @@ html {
 body {
   margin: 0 auto;
   max-width: 44rem;
-  padding: 4rem 1.25rem 5rem;
+  padding: 2rem 1.25rem 3rem;
   background: var(--bg);
   color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -157,9 +157,151 @@ h3 + p {
   gap: 0.5rem 1.5rem;
 }
 
+/* Site header, navigation and footer */
+
+.site-header {
+  margin-bottom: 3.5rem;
+}
+
+.site-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+}
+
+.site-name {
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.profiles,
+.site-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.profiles {
+  gap: 0.25rem 1rem;
+  font-size: 0.9375rem;
+}
+
+.site-nav ul {
+  gap: 0.25rem 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.site-header a:not(:hover):not(:focus-visible) {
+  text-decoration: none;
+}
+
+.site-nav a[aria-current] {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.site-footer {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+/* Books */
+
+.book-list {
+  margin-top: 2rem;
+}
+
+.book-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.book-header .subtitle {
+  margin: 0.35rem 0 0;
+  font-size: 1.125rem;
+}
+
+.book-header .meta {
+  margin: 0.75rem 0 0;
+}
+
+.cover {
+  flex: none;
+  width: 11rem;
+  height: auto;
+  border: 1px solid var(--rule);
+}
+
+.cta {
+  margin: 1.5rem 0 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.55rem 1.1rem;
+  border-radius: 4px;
+  background: var(--accent);
+  color: var(--bg);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.note {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+
+.chapters,
+.papers,
+.resources {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chapters > li + li,
+.papers > li + li,
+.resources > li + li {
+  margin-top: 0.4rem;
+}
+
+.citation {
+  padding: 0.75rem 1rem;
+  border-left: 3px solid var(--accent);
+  font-size: 0.9375rem;
+}
+
 @media (max-width: 30rem) {
   body {
-    padding-top: 2.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .book-header {
+    flex-direction: column-reverse;
+  }
+
+  .cover {
+    width: 9rem;
   }
 
   .intro {
