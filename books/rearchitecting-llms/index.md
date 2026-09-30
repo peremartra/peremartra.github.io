@@ -21,7 +21,7 @@ image_alt: Cover of Rearchitecting LLMs
 
 ## About the book
 
-A practical guide to turning large pre-trained language models into small, efficient models specialized for a domain. Instead of treating a model as a black box, the book works on its architecture: removing the layers and neurons that do not contribute to the goal (depth and width pruning), recovering capability through knowledge distillation, and specializing the result with LoRA-based fine-tuning. It also introduces methods of my own, such as fair pruning, which reduces bias at the neuron level, and adaptive attention bypass for dynamic inference.
+A practical guide to turning large pre-trained language models into small, efficient models specialized for a domain. Instead of treating a model as a black box, the book works on its architecture: removing the layers and neurons that do not contribute to the goal (depth and width pruning), recovering capability through knowledge distillation, and specializing the result with LoRA-based fine-tuning. It also introduces methods of my own, such as fair pruning, which reduces bias at the neuron level, and internal activation interpretation using pair contrastive prompts.
 
 </section>
 
