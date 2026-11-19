@@ -83,7 +83,15 @@ Every chapter comes with notebooks that run on the free tier of Google Colab, us
 - 10 · [Exploring the transformer black box](https://github.com/peremartra/Rearchitecting-LLMs/blob/main/CH10) — Activation analysis and behavioral interpretability
 {: .chapters}
 
-More chapters are being written and will be added here as they are published.
+- 11 · [Precision pruning for bias](https://github.com/peremartra/Rearchitecting-LLMs/blob/main/CH11) — Detecting the neurons responsible for different responses and smoothing them   
+{: .chapters}
+
+- 12 · [Case study — replacing one agent call with a specialized SLM in production](https://github.com/peremartra/Rearchitecting-LLMs/blob/main/CH12) — Deciding when it's worth using an SLM, and serving a custom SLM with vLLM.
+{: .chapters}
+
+- 13 · [Capstone — cascading specialists into a model family for agents](https://github.com/peremartra/Rearchitecting-LLMs/blob/main/CH12) — Create a family of specialized models and use them in speculative decoding
+{: .chapters}
+
 
 </section>
 
@@ -157,6 +165,12 @@ More chapters are being written and will be added here as they are published.
 - [Eliciting Latent Predictions from Transformers with the Tuned Lens](https://arxiv.org/abs/2303.08112)
 {: .papers}
 
+### 11 · Precision pruning for bias
+
+- [Eliciting Latent Predictions from Transformers with the Tuned Lens](https://arxiv.org/abs/2303.08112)
+{: .papers}
+
+
 </section>
 
 <section markdown="1">
@@ -169,6 +183,7 @@ More chapters are being written and will be added here as they are published.
 - [OptiPFair library](https://github.com/peremartra/optipfair)
 - Related research: [Fairness Pruning, arXiv:2607.28319](https://arxiv.org/abs/2607.28319)
 {: .resources}
+- [Gemini Notebook](https://notebook.google.com/notebook/a059766a-14bf-4d75-8840-b05a79be680e)
 
 </section>
 
