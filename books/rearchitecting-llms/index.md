@@ -167,7 +167,9 @@ Every chapter comes with notebooks that run on the free tier of Google Colab, us
 
 ### 11 · Precision pruning for bias
 
-- [Eliciting Latent Predictions from Transformers with the Tuned Lens](https://arxiv.org/abs/2303.08112)
+- [Decomposing Language Models With Dictionary Learning](https://transformer-circuits.pub/2023/monosemantic-features)
+- [Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet](https://transformer-circuits.pub/2024/scaling-monosemanticity/)
+- [Fairness Pruning: Locating Demographic Bias in GLU-MLP Layers via Differential Activations](https://arxiv.org/abs/2607.28319)
 {: .papers}
 
 
