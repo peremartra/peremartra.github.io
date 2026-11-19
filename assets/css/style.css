@@ -291,9 +291,40 @@ h3 + p {
   font-size: 0.9375rem;
 }
 
+.course-callout {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #c7dced;
+  border-left: 4px solid var(--accent);
+  border-radius: 0.5rem;
+  background: #edf5fc;
+}
+
+.course-callout h2 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.course-callout h3 {
+  margin-top: 1.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .course-callout {
+    border-color: #3b5267;
+    background: #1d2935;
+  }
+}
+
 @media (max-width: 30rem) {
   body {
     padding-top: 1.5rem;
+  }
+
+  .course-callout {
+    padding: 1rem;
   }
 
   .book-header {
