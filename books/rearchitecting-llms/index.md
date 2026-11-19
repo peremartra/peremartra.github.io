@@ -75,19 +75,6 @@ Your engineers can learn to prune, distill and specialize models by doing it. I 
 
 If you're an instructor, I can help you design the course: which chapters and labs fit your audience and level, and how to pace them to your students. Write to [peremartra@uadla.com](mailto:peremartra@uadla.com?subject=Course%20design%20-%20Rearchitecting%20LLMs).
 
-</section>
-
-### Good to know
-
-- Enabling Actions in the fork also enables this repository's notebook-cleanup workflow, which amends and force-pushes any push that touches `.ipynb` files. Don't push notebooks to `main`; share them as Colab links or Gists. Once the discussions are seeded, you can disable Actions again in the fork's settings.
-- A fork of a public repo is public, so submissions are visible to everyone. Tell students before they post.
-- Use *Sync fork* to pick up new notebooks and fixes.
-- The repo is Apache-2.0: keep the LICENSE and cite the book (see below).
-
-**Running a course with this book?** [I'd like to hear about it](https://github.com/peremartra/Rearchitecting-LLMs/discussions/categories/courses): open a Discussion in the *Courses* category.
-
-</section>
-
 <section markdown="1">
 
 ## Chapters published so far
