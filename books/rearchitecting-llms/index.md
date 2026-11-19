@@ -89,7 +89,7 @@ Every chapter comes with notebooks that run on the free tier of Google Colab, us
 - 12 · [Case study — replacing one agent call with a specialized SLM in production](https://github.com/peremartra/Rearchitecting-LLMs/blob/main/CH12) — Deciding when it's worth using an SLM, and serving a custom SLM with vLLM.
 {: .chapters}
 
-- 13 · [Capstone — cascading specialists into a model family for agents](https://github.com/peremartra/Rearchitecting-LLMs/blob/main/CH12) — Create a family of specialized models and use them in speculative decoding
+- 13 · [Capstone — cascading specialists into a model family for agents](https://github.com/peremartra/Rearchitecting-LLMs/blob/main/CH13) — Create a family of specialized models and use them in speculative decoding
 {: .chapters}
 
 
