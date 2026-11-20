@@ -25,6 +25,26 @@ A practical guide to turning large pre-trained language models into small, effic
 
 </section>
 
+<section class="course-callout" id="using-this-book-in-a-course" markdown="1">
+
+## 🎓 Using this book in a course
+
+The hands-on labs are designed to be worked through in a group: a class, a study group or a company reading group. The instructor forks the book's repository once per cohort, and each chapter's *Hands-on Discussion* becomes the place where students post their results, including the runs that fail or don't match the chapter. Most labs run on a free Colab T4.
+
+**[Read the instructor guide →](https://github.com/peremartra/Rearchitecting-LLMs#-using-this-book-in-a-course)** It covers setup step by step.
+
+### Train your team with the book
+
+Your engineers can learn to prune, distill and specialize models by doing it. I run the cohort: guided sessions through the book's labs, led by me, working on open models like Llama, Gemma and Qwen, with the structure and the shared workspace already set up.
+
+**[Tell me about your team →](mailto:peremartra@uadla.com?subject=Team%20training%20-%20Rearchitecting%20LLMs)** A few lines are enough: team size, background and what you want them to be able to do afterwards.
+
+### Teaching it yourself?
+
+If you're an instructor, I can help you design the course: which chapters and labs fit your audience and level, and how to pace them to your students. Write to [peremartra@uadla.com](mailto:peremartra@uadla.com?subject=Course%20design%20-%20Rearchitecting%20LLMs).
+
+</section>
+
 <section markdown="1">
 
 ## Why I wrote it
@@ -56,24 +76,6 @@ AI, ML and data engineers who know Python and want to go beyond fine-tuning, wit
 Every chapter comes with notebooks that run on the free tier of Google Colab, using open models such as Llama, Gemma and Qwen.
 
 </section>
-
-<section class="course-callout" id="using-this-book-in-a-course" markdown="1">
-
-## 🎓 Using this book in a course
-
-The hands-on labs are designed to be worked through in a group: a class, a study group or a company reading group. The instructor forks the book's repository once per cohort, and each chapter's *Hands-on Discussion* becomes the place where students post their results, including the runs that fail or don't match the chapter. Most labs run on a free Colab T4.
-
-**[Read the instructor guide →](https://github.com/peremartra/Rearchitecting-LLMs#-using-this-book-in-a-course)** It covers setup step by step.
-
-### Train your team with the book
-
-Your engineers can learn to prune, distill and specialize models by doing it. I run the cohort: guided sessions through the book's labs, led by me, working on open models like Llama, Gemma and Qwen, with the structure and the shared workspace already set up.
-
-**[Tell me about your team →](mailto:peremartra@uadla.com?subject=Team%20training%20-%20Rearchitecting%20LLMs)** A few lines are enough: team size, background and what you want them to be able to do afterwards.
-
-### Teaching it yourself?
-
-If you're an instructor, I can help you design the course: which chapters and labs fit your audience and level, and how to pace them to your students. Write to [peremartra@uadla.com](mailto:peremartra@uadla.com?subject=Course%20design%20-%20Rearchitecting%20LLMs).
 
 <section markdown="1">
 
